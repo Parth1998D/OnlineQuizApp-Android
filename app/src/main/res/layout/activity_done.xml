@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Done"
+    android:background="@drawable/bg2"
+    android:padding="25dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/done">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score : 0"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/txtTotalScore"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passed : 0/30"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/txtTotalQuestion"/>
+        <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/doneProgressBar"
+                android:layout_marginVertical="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="5dp">
+            <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnTryAgain"
+                    android:background="#AD1457"
+                    android:text="try again"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:theme="@style/MyButton"
+                    android:layout_marginRight="7dp"/>
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/btnExit"
+                android:background="#AD1457"
+                android:text="exit"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:theme="@style/MyButton"
+                android:layout_marginLeft="7dp"/>
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Sign out?"
+                android:id="@+id/signout"
+                android:textColor="#357EC7"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+</LinearLayout>
